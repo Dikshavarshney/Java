@@ -3,25 +3,24 @@ import java.util.*;
 class Solution
 {
 	public static  void main (String [ ] agrs)
-		{
-			Scanner scan = new Scanner(System.in);
-		   int i , size;
+	  {
+		 Scanner scan = new Scanner(System.in);
+		 int i , size;
 
-			System.out.println("Enter  the size of array");
-		   size = scan.nextInt();
+	         System.out.println("Enter  the size of array");
+		 size = scan.nextInt();
 
-		   System.out.println("Enter the elemets to array");
-		   int [ ] arr = new int [size ];
-
+		 System.out.println("Enter the elemets to array");
+		 int [ ] arr = new int [size ];
 
 		   for(i=0;  i<size; i++)
-				 {
-					 arr [i] = scan.nextInt();
-				  }
-           System.out.println("The Array Elements are");
-		   for(int n : arr)
+			 {
+			    arr [i] = scan.nextInt();
+               		 }
+                 System.out.println("The Array Elements are");
+		 for(int n : arr)
 		         {
-			         System.out.println(arr[n]);
-		          }
+			    System.out.println(arr[n]);
+		         }
 		   }
 }
