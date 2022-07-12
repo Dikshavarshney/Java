@@ -1,0 +1,43 @@
+import java.util.*;
+
+class Fibonacci
+	{
+    public static void main(String[ ] args )
+     {
+
+			  Scanner scan = new Scanner(System.in);
+//created a object so we take values as input by user;
+
+			  int n1 , n2 , n3, i, size, count;
+//created variables  n1 , n2 , n3, i, size, count as integer because we need interger values as input;
+
+			  System.out.println("enter the integer for n1");
+			  n1 = scan.nextInt();
+//ask user to enter input and then sacn the value;
+
+			  System.out.println("enter the integer for n2");
+			  n2 = scan.nextInt();
+//ask user to enter input and then sacn the value;
+
+             System.out.println("enter the integer for count");
+			  count = scan.nextInt();
+//ask user to enter input and then sacn the value;
+
+           System.out.println(n1);
+           System.out.println(n2);
+//Print the value of n1 & n2;
+
+//use "for" loop for printing fibonacci series as output;
+           for(i=2; i<count; i++) //  i is initillized by 2 because n1 & n2 is printed;
+           {
+
+			   n3 = n1+n2;  // addition of values n1 & n2 is loaded to n3;
+              System.out.println(""+n3); // n3 is printed here;
+
+			   n1= n2;  // now the value of n1 is change as n2;
+			   n2=n3; // the value of n2 is the value of n3;
+
+		  }
+
+   }
+}
