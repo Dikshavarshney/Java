@@ -3,30 +3,31 @@ class  Palindrome
 {
 	public static void main(String [ ] args)
 	{
-	      Scanner scan =	new Scanner(System.in); // create a object;
-        int num, r, sum =0, count;  // take variables as Int & initialized sum as 0;
+	      Scanner scan = new Scanner(System.in); // create a object;
+              int num, r, sum =0, count;  // take variables as Int & initialized sum as 0;
 
-        System.out.println("Enter Integer to check weather number is palindrome or not"); // ask to enter integer;
-        num = scan.nextInt(); // scan the entered value;
-        count = num; //save num into count;
+              System.out.println("Enter Integer to check weather number is palindrome or not"); // ask to enter integer;
+              num = scan.nextInt(); // scan the entered value;
+              count = num; //save num into count;
 
-   		  while(num>0) //execute while if when the number is greater than 0;
-		    {
-			    r =num%10; // get reminder;
-			    sum = (sum*10)+r; 
-			    num = num/10;
-			  }
+   	      while(num>0) //execute while if when the number is greater than 0;
+		 {
+		   r =num%10; // get reminder;
+                   sum = (sum*10)+r; 
+	           num = num/10;
+		}
 
-        if(count==sum) //compare count and sum
-         {
-			    System.out.println("The given number"+count+" is Palindrome "); // <-- print if the count & sum are eqaul; 
-			   }
-        else
-			 	 {
-          System.out.println("The given number"+count+"is not Palindrome"); //<-- print if the count & sum are not eqaul;
-         }
+              if(count==sum) //compare count and sum
+               {
+                 System.out.println("The given number"+count+" is Palindrome "); // <-- print if the count & sum are eqaul; 
+   	       }
+             else
+	       {
+                System.out.println("The given number"+count+"is not Palindrome"); //<-- print if the count & sum are not eqaul;
+               }
 
-		  }
-
+             System.out.println("The reverse of the given number is "+sum);
+	
+	}
    }
 
