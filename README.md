@@ -6,7 +6,7 @@ Codes will be started from Basic program and goes with advanced programs.
 
 Table of Programs~
 
-1D Array.
-Fibonacci series.
-Integer Reverse.
-Integer Reverse.
+1D Array,
+Fibonacci series,
+Integer Reverse,
+Palindrome number.
