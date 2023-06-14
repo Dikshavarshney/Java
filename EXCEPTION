@@ -1,36 +1,38 @@
 import java.util.Scanner;
-public class demo{
-
-	public static void main(String args[]){
+class a  {
+    public static void main(String[] args){
     
-    	int a,b,arr[],ch;
-        
-        arr = new int[5];
-        Scanner scan = new Scanner(System.in);
-        
-        System.out.println("Enter 0 or 1");
-        ch=scan.nextInt();  
-          
+    int a, b, arr[], ch;
+    arr =  new int [5];
+    
+    Scanner scan = new Scanner(System.in);
 
-            try{
-            	if(ch==0){
-                	a=10;
-                    b=0;
-                	System.out.println(a/b);
-            	}
-                if(ch==1){
-                  for(int i=0;i<6;i++){
-                      arr[i] = scan.nextInt();
-                  }
-                }
-            }catch(ExceptionArithematic e){
-          		System.out.println(e);     
-           }catch(ExceptionArrayOutOfBound e){
-           		System.out.println(e);
-           }
-           finally{
-           		System.out.println("IN THE FINALLY BLOCK");
-           }
-
-	}
+    System.out.println("Enter 0 or 1: ");
+    ch = scan.nextInt();
+    
+    try{
+        if(ch == 0){
+            a=10;
+            b=0;
+            System.out.println(a/b);
+        }
+        
+        if(ch == 1){
+            for(int i = 0; i <= 6; i++){
+                arr[i] = scan.nextInt();
+            }
+        }
+    }catch(ArithmeticException e){
+            System.out.println("Divide by zero");
+            System.out.println(e);
+        
+    }catch(ArrayIndexOutOfBoundsException e){
+            System.out.println("Arry size is limited");
+            System.out.println(e);
+    }
+    finally{
+        System.out.println("IN THE FINAL BLOCK");
+    }
+    
+}
 }
