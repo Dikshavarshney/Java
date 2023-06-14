@@ -1,0 +1,26 @@
+import java.util.*;
+
+class a extends Exception{
+    
+    public String toString(){
+        return myException;
+    }
+    
+    public class b{
+        public void fun() throws a{
+            toString();
+        }
+    }
+    
+    public  static void main(String args[]){
+        try{
+            fun();
+        }catch(myException ex){
+            System.out.println(e);
+        }
+        finally{
+            System.out.println("Hey in FINALLY block");
+        }
+    }
+    
+}
